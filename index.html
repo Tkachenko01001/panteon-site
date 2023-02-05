@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panteon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+</head>
+<body>
+    <div class="display-form">
+        <form class="form-position ">
+         <label for="value" class="form-lable1 label-in-input"> 
+            Выберите цель:
+             <select id="value" class='castom-input input'>
+                 <option value="1" class="option-form">Базовый расчёт</option>
+                 <option value="2" class="option-form">Набрать массу</option>
+                 <option value="3" class="option-form">Похудеть</option>
+             </select>
+             </label>
+             <label for="mass" class="form-lable label-in-input">
+                <input type="text" id="mass" class="castom-input input" placeholder=" " required/>
+                <div class="label-text">Текущий вес (кг):</div>
+         </label>
+        
+         <label for="amount-of-receptions" class="form-lable label-in-input">
+             <input type="text" id="amount-of-receptions" class="castom-input input" placeholder=" " required/>
+             <div class="label-text">Кол-во приёмов:</div>
+         </label>
+         <label for="amount-of-carbohydrates" class="form-lable label-in-input">
+             <input type="text" id="amount-of-carbohydrates" class="castom-input input" placeholder=" " required/>
+             <div class="label-text">Кол-во углеводов:</div>
+         </label>
+         <button type="button" class="btn-style">Расчитать</button>
+        </form>
+        <div class="result-block">
+            <h2 class="result-block__title">
+                
+            </h2>
+            <ul class="result-block__list">
+                <li class="result-block-list__item"></li>
+                <li class="result-block-list__item"></li>
+                <li class="result-block-list__item"></li>
+            </ul>
+        </div>
+     </div>
+     <script src="./js/script.js"></script>
+</body>
+</html>
