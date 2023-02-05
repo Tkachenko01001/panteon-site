@@ -19,7 +19,7 @@ li {
     border-radius: 3px;
     width: 450px;
     height: 500px;
-    box-shadow: rgba(238, 146, 27, 0.4) -5px 5px, rgba(240, 156, 46, 0.3) -10px 10px, rgba(240, 156, 46, 0.2) -15px 15px, rgba(240, 156, 170, 0.1) -20px 20px, rgba(240, 156, 170, 0.05) -25px 25px;
+    box-shadow: rgb(238 146 27 / 40%) -5px 5px, rgb(240 156 46 / 30%) -10px 10px, rgb(240 156 46 / 20%) -15px 15px, rgb(240 156 170 / 10%) -20px 20px, rgb(240 156 170 / 5%) -25px 25px;
     background: #04202C;
 }
 
@@ -101,8 +101,6 @@ li {
     background-color: #04202C;
 }
 
-
-
 .label-text {
     transform: translateY(-25px);
     transition: all 0.3s;
@@ -113,8 +111,6 @@ li {
 .input:focus + .label-text {
     transform: translateY(-43px);
     color:#ff8f1e;
-    letter-spacing: 2px;
-    font-size: 14px;
 }
 
 .input:valid + .label-text {
@@ -127,12 +123,11 @@ li {
 
 #value {
    color: #C9D1C8;
-   letter-spacing: 2px;
 }
 
 
 .btn-style {
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-0%) translateY(-0%);
   }
   
   body {
@@ -149,8 +144,6 @@ li {
     border-radius: 4px;
     transition: 0.6s;
     overflow: hidden;
-    margin-top: 30px;
-    margin-left: 40%;
   }
 
   .btn-style:focus {
