@@ -39,8 +39,17 @@ const onSelect = () => {
        resultListItem[1].textContent = `Количество белков в день: ${protein}г. ( ${numberOfProtein}г. на один приём );`
        resultListItem[2].textContent = `Количество жиров в день: ${fats}г. ( ${numberOfFats}г. на один приём );`
        };
-};
 
+       productCalc(numberOfCarbohydrates, formInputC.value);
+      };
 
+const productCalc = (needToEat, quantity) => {
+ const result = Math.round((needToEat * 100)/quantity);
+ const markup = `<div> 
+ <h2> Результат подсчёта углеводов вашего продукта </h2>
+ <p> Вам необходимо потреблять ${result}г. вашего продукта на один приём пищи </p>`;
+ 
+ return resultBlock.insertAdjacentHTML('beforeend', markup);
+}
 
 formBtn.addEventListener("click", onSelect);
