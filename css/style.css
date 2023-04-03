@@ -80,6 +80,14 @@ li {
     max-width: 340px;
     display: flex;
     transform: translate(10%);
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 781px) {
+    .display-form {
+        transform: translate(100%);
+        max-width: 400px;
+    }
 }
 
 .castom-input {
