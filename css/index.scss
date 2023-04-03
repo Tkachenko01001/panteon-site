@@ -7,6 +7,7 @@ ul {
 li {
     list-style: none;
 }
+
 .form-position {
     z-index: 1;
     position: absolute;
@@ -17,14 +18,12 @@ li {
     flex-direction: column;
     gap: 30px;
     border-radius: 3px;
-    width: 100%;
+    width: 450px;
     height: 500px;
     box-shadow: rgb(238 146 27 / 40%) -5px 5px, rgb(240 156 46 / 30%) -10px 10px, rgb(240 156 46 / 20%) -15px 15px, rgb(240 156 170 / 10%) -20px 20px, rgb(240 156 170 / 5%) -25px 25px;
     background: #04202C;
-}
 
-@media screen and (max-width: 780px) {
-    .form-position {
+    @media screen and (max-width: 780px) {
         width: 100%;
     }
 }
@@ -58,11 +57,9 @@ li {
 .result-block-click {
     opacity: 1;
     transform: translate(130%);
-}
 
-@media screen and (max-width: 780px) {
-    .result-block-click {
-    transform: translateY(120%);
+    @media screen and (max-width: 780px) {
+        transform: translateY(120%);
     }
 }
 
@@ -77,9 +74,13 @@ li {
 
 
 .display-form {
-    max-width: 340px;
+    width: 450px;
     display: flex;
     transform: translate(10%);
+
+    @media screen and (max-width: 780) {
+        max-width: 370px;
+    }
 }
 
 .castom-input {
